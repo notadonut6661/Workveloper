@@ -1,12 +1,14 @@
 @import 'src/assets/index';
+//;
 
 .Find {
-  display: flex !important;
+  display: grid !important;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(2, 25%);
 }
 
 .Find > * {
   margin-top: 0;
-  margin-left: 10%;
   border-left: 1px solid $primary-border-color;
   height: 100%;
 }
@@ -16,18 +18,39 @@
 }
 
 .Find > ul {
+  margin-left: 15%;
   list-style-type: none;
   font-weight: 100;
 }
 
 .Find  li {
   margin-top: 10px;
+  margin-left: 10px;
 }
 
-.Find > ul > li:hover::after {
-  display: block;
+
+.Find  li:hover::before {
   content: '';
+  position: absolute;
+
+}
+
+// add animation to image change
+.Find:has(#Employee:hover)  .Image > div{
   background: #000;
-  height: 10px;
-  width: 100px;
+}
+
+.Find > .Image {
+  display: flex;
+  align-items: center;
+}
+
+.Find > .Image > div {
+  height: 50%;
+  width: 100%;
+  background: url('../../../assets/Businessman.jpg') no-repeat;
+}
+
+.Find > .Image > div:hover {
+  opacity: 0.75;
 }
