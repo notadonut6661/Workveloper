@@ -12,13 +12,13 @@ export default function SignUpWindow(): JSX.Element {
 
         <form name={'UserData'}>
             <div>
-                <div className={'InputText'}>
+                <div className={'InputText'} id={'Email'}>
                     <input type={'email'} placeholder={'E-mail'}/>
                 </div>
 
             </div>
             <div>
-                <div className={'InputText'}>
+                <div className={'InputText'} id={'Password'}>
                     <input type={'password'} placeholder={'Password'}/>
                 </div>
                 <input type={'button'} value={'Sign up'} />

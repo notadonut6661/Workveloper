@@ -7,6 +7,7 @@ import DropdownBody from "../Dropdown/DropdownBody";
 
 /* Detailed design TODO:
 * Navbar should be a list of links, that change their color on:hover
+* 
 * DON'T DO:
 *   Navbar buttons
 *   Change font-size on:hover
@@ -17,14 +18,14 @@ export default function Navbar():JSX.Element {
         <nav className={'Navbar'}>
             <img src={logo} className={'Logo'}/>
             <div className={'Nav-links'}>
-                    <a href={'#'}>
+                    <a href={'/'}>
                             Home
                     </a>
                     <Dropdown>
                         <a>Find</a>
                         <DropdownBody/>
                     </Dropdown>
-                    <a href={'#'}>
+                    <a href={'/'}>
                             Announcement
                     </a>
             </div>

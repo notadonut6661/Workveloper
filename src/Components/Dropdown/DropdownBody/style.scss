@@ -1,5 +1,5 @@
 @import 'src/assets/index';
-//;
+
 
 .Find {
   display: grid !important;
@@ -11,6 +11,10 @@
   margin-top: 0;
   border-left: 1px solid $primary-border-color;
   height: 100%;
+}
+
+.Find > *:last-child {
+  border-right: 1px solid $primary-border-color;
 }
 
 .Find * {
@@ -28,17 +32,19 @@
   margin-left: 10px;
 }
 
+.Find  li:hover {
+  font-weight: 300;
+}
 
 .Find  li:hover::before {
-  content: '';
-  position: absolute;
-
+  content: '> ';
 }
 
 // add animation to image change
-.Find:has(#Employee:hover)  .Image > div{
-  background: #000;
+.Find:has(#Worker:hover)  .Image > div{
+  animation: ChangeBackground 125ms 0s forwards;
 }
+
 
 .Find > .Image {
   display: flex;
@@ -49,8 +55,24 @@
   height: 50%;
   width: 100%;
   background: url('../../../assets/Businessman.jpg') no-repeat;
+  background-size: 100% 100%;
 }
 
 .Find > .Image > div:hover {
   opacity: 0.75;
+}
+
+@keyframes ChangeBackground {
+  0% {
+    background: #ccc;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    background: url('../../../assets/workers.png') no-repeat;
+  }
 }

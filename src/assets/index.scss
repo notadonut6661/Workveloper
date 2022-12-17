@@ -18,13 +18,22 @@ a {
   color: white;
 }
 
+div#main-content {
+  max-width: 100vw;
+}
+
+#root {
+  max-width: 99vw;
+}
+
 body {
   background: $background-color;
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 input[type=button] {

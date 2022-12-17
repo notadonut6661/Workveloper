@@ -4,7 +4,8 @@
   position: absolute;
   top: 9%;
   display: flex;
-  background: url("../../assets/background.webp");
+  background: url("../../assets/background.webp") no-repeat;
+  background-size: 100vw 91vh;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -52,13 +53,22 @@ span.Gradient {
   width: 50%;
 }
 
+.SignUpWindow:has( #Password > input:focus ) #Password, .SignUpWindow:has(#Email > input:focus) #Email {
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  -webkit-box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+  -moz-box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+  box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+}
+
 .SignUpWindow > form  input[type='button'] {
   @include thin-border-line;
   background: #fff;
   height: 100%;
   border-radius: 0 9px 14px 0;
-  -moz-border-radius: 0 9px 14px 0;
-  -webkit-border-radius: 0 9px 14px 0;
+  -webkit-box-shadow: inset -1x 1px 5px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.18);
+  box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.18);
 }
 
 .SignUpWindow > form  input[type='button']:hover {
