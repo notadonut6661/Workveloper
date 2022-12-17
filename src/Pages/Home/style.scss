@@ -1,0 +1,73 @@
+@import "src/assets/index";
+
+#main-content {
+  position: absolute;
+  top: 9%;
+  display: flex;
+  background: url("../../assets/background.webp");
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 91%;
+}
+
+.SignUpWindow {
+  display: grid;
+  grid-auto-rows: 30% 35% 15%;
+  gap: 10% 10%;
+  height: 45vh;
+  width: 50vw;
+  border-radius: 5px;
+  background: $primary-color-900;
+  color: white;
+  font-size: x-large;
+}
+
+.SignUpWindow > span {
+  margin-left: 25px;
+}
+
+span.Gradient {
+  font-size: xxx-large;
+  background: #9CCEFF;
+  background: -webkit-linear-gradient(to top right, #9CCEFF 0%, #93FACC 49%, #C2FCFF 50%, #584CBD 100%);
+  background: -moz-linear-gradient(to top right, #9CCEFF 0%, #93FACC 49%, #C2FCFF 50%, #584CBD 100%);
+  background: linear-gradient(to top right, #9CCEFF 0%, #93FACC 49%, #C2FCFF 50%, #584CBD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.SignUpWindow > form {
+  display: grid;
+  grid-auto-rows: 30% 30%;
+  gap: 10%;
+}
+
+.SignUpWindow > form > div {
+  display: flex;
+  margin-left: 25%;
+}
+
+.SignUpWindow > form > div > .InputText {
+  width: 50%;
+}
+
+.SignUpWindow > form  input[type='button'] {
+  @include thin-border-line;
+  background: #fff;
+  height: 100%;
+  border-radius: 0 9px 14px 0;
+  -moz-border-radius: 0 9px 14px 0;
+  -webkit-border-radius: 0 9px 14px 0;
+}
+
+.SignUpWindow > form  input[type='button']:hover {
+  -webkit-box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+  -moz-box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+  box-shadow: inset -1px 1px 5px 1px rgba(0,0,0,0.29);
+}
+
+.SignUpWindow > a.LogInLink {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,61 @@
+@import "src/assets/index";
+
+// Choose another fonts
+.SearchBarParent {
+  display: flex;
+  align-items: center;
+}
+
+.SearchBar {
+  @include thin-border-line;
+  display: flex;
+  width: 85%;
+  align-items: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 2em;
+}
+
+.SearchBar > input[type="text"] {
+  font-size: medium;
+  position: center;
+  margin-left: 5%;
+  border: none;
+  height: 100%;
+  width: 95%;
+}
+
+.SearchBar input[type="text"]:focus {
+  outline: none;
+}
+
+.SearchQueryField {
+  background: none;
+}
+
+.SearchBar:has(> .SearchQueryField:focus) {
+  -webkit-box-shadow: inset -1x 1px 5px 0px rgba(0,0,0,0.18);
+  -moz-box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.18);
+  box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.18);
+}
+
+.SearchBarParent button {
+  @include thin-border-line;
+  height: 37.5px;
+  width: 15%;
+  border-left: none;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  background: none;
+}
+
+.SearchBarParent > #Submit:hover {
+  background: #eee;
+  -webkit-box-shadow: inset -1x 1px 5px 0px rgba(0,0,0,0.28);
+  -moz-box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.28);
+  box-shadow: inset -1px 1px 5px 0px rgba(0,0,0,0.28);
+}
+
+.SearchBarParent > #Submit > img {
+  height: 65%;
+}

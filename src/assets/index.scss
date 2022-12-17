@@ -1,0 +1,51 @@
+$primary-color: hsl(153, 33%, 40%);
+$primary-color-900: hsl(153, 33%, 56%);
+$primary-color-800: hsl(153, 33%, 62%);
+$primary-color-700: hsl(152, 33%, 66%);
+$background-color: hsl(0, 0%, 98%);
+$primary-border-color: hsl(0, 0%, 80%);
+
+@mixin thin-border-line {
+  border: 1px solid $primary-border-color;
+}
+
+* {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: $background-color;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+input[type=button] {
+  background: none;
+}
+
+a.LogInLink {
+  text-decoration: underline;
+  font-size: min(3vw, 15px);
+}
+
+div.InputText {
+  background: #fff;
+}
+
+div.InputText > input {
+  background: #000;
+  margin-left: 5%;
+  width: 95%;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: none;
+}

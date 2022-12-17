@@ -1,0 +1,33 @@
+@import 'src/assets/index';
+
+.Find {
+  display: flex !important;
+}
+
+.Find > * {
+  margin-top: 0;
+  margin-left: 10%;
+  border-left: 1px solid $primary-border-color;
+  height: 100%;
+}
+
+.Find * {
+  color: black;
+}
+
+.Find > ul {
+  list-style-type: none;
+  font-weight: 100;
+}
+
+.Find  li {
+  margin-top: 10px;
+}
+
+.Find > ul > li:hover::after {
+  display: block;
+  content: '';
+  background: #000;
+  height: 10px;
+  width: 100px;
+}
