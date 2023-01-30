@@ -1,0 +1,46 @@
+@import "src/assets/index";
+
+div#Announcements > div#main-content {
+  display: grid;
+  grid-template-columns: 20vw 60vw;
+}
+
+.AnnouncementFilters {
+  background: #fff;
+  border-right: $primary-border-color 1px solid;
+}
+
+div#tags {
+  @include thin-border-line;
+  height: 5%;
+  border-right: none;
+  border-left: none;
+}
+
+div#wage-range {
+  height: 25%
+}
+
+div#wage-range   .InputText{
+  @include thin-border-line;
+  width: 15% !important;
+  height: 95% !important; 
+  border-radius: 6px;
+}
+
+div#wage-range   > div.body > div.InputText:has(input:focus) {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+
+div#wage-range > div.body {
+  height: 17.5%;
+  margin-top: 10%;
+  display: flex;
+} 
+
+div#wage-range > div.body > * {
+  margin-left: 2%;
+}

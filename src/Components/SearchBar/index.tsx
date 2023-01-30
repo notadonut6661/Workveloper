@@ -1,7 +1,11 @@
 import './style.scss';
 import searchIcon from '../../assets/search.png';
 
-export default function SearchBar({placeholder}: {placeholder?: string}): JSX.Element {
+interface SearchBarProps {
+    placeholder?: string;
+}
+
+export default function SearchBar({placeholder}: SearchBarProps): JSX.Element {
     return (<div  className={'SearchBarParent'}>
             <div className={'SearchBar'}>
                 <input
@@ -9,7 +13,7 @@ export default function SearchBar({placeholder}: {placeholder?: string}): JSX.El
                     className={'SearchQueryField'} placeholder={placeholder ?? ''}/>
             </div>
             <button id={'Submit'}>
-                <img src={searchIcon} />
+                <img src={searchIcon} alt={'Search'} />
             </button>
         </div>)
 }

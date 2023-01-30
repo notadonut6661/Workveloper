@@ -1,0 +1,1 @@
+export type WageValidationCodes = 'Valid' | 'Higher' | 'Lower' | 'Minimal value is higher than maximum';

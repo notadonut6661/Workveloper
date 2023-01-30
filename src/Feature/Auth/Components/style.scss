@@ -1,0 +1,45 @@
+@import '../../../assets/index';
+
+div#login > div#main-content {
+  background: linear-gradient(152deg, rgba(121,180,106,1) 0%, rgba(63,210,241,1) 50%, rgba(159,122,181,1) 77%, rgba(186,252,69,1) 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+.Auth {
+  margin-left: 0;
+  margin-right: 0;
+  width: 25%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(157deg, rgba(106,180,147,1) 43%, rgba(183,241,63,1) 100%);
+}
+
+.Auth > div {
+  width: 80%;
+  height: 25%;
+}
+
+.Auth > div > * {
+  height: 27.5%;
+  border-radius: 12.5px;
+  margin-top: 10%;
+}
+
+.Auth > div > .InputText {
+  margin-top: 5%;
+}
+
+.Auth > div > button {
+  @include thin-border-line;
+  width: 100%;
+  border-radius: 25px;
+  background: #fff
+}
+
+.Auth > div > .InputText:nth-child(1) {
+  margin-top: 0;
+}

@@ -2,6 +2,9 @@
 *  RENAME THE FILE
 *  ADD AN PHOTO TO THE BACKGROUND*/
 
+import React from "react";
+import Form from "../../Components/Form";
+
 export default function SignUpWindow(): JSX.Element {
     return (<div className={'SignUpWindow'}>
         <span className={'Description'}>
@@ -12,15 +15,10 @@ export default function SignUpWindow(): JSX.Element {
 
         <form name={'UserData'}>
             <div>
-                <div className={'InputText'} id={'Email'}>
-                    <input type={'email'} placeholder={'E-mail'}/>
-                </div>
-
+                <Form id={'Email'} type={'email'}/>
             </div>
             <div>
-                <div className={'InputText'} id={'Password'}>
-                    <input type={'password'} placeholder={'Password'}/>
-                </div>
+                <Form  type={'password'} id={'Password'} placeholder={'Password'} />
                 <input type={'button'} value={'Sign up'} />
             </div>
         </form>
